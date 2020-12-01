@@ -1,14 +1,71 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Poppins', sans-serif;
 }
-
 body {
-	background: #cccccc;
+	background: #222;
 	font-family: sans-serif;
 	font-weight: bolder;
 }
+/* Introductory part */
+#intro {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+#intro span {
+	font-size: 10em;
+	color: white;
+}
 
+.rubber-letter {
+	transition: .2s ease-in-out color;
+}
+.rubber-letter:hover {
+	display: inline-block;
+	cursor: pointer;
+	animation-name: rubberLetter;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	color: white;
+}
+
+@keyframes rubberLetter {
+	0% {
+		transform: scale3d(1, 1, 1);
+		color: skyblue;
+	}
+	30% {
+		transform: scale3d(1.25, .75, 1);
+		color: skyblue;
+	}
+	40% {
+		transform: scale3d(.75, 1.25, 1);
+		color: skyblue;
+	}
+	50% {
+		transform: scale3d(1.15, .85, 1);
+		color: skyblue;
+	}
+	65% {
+		transform: scale3d(.95, 1.05, 1);
+		color: skyblue;
+	}
+	75% {
+		transform: scale3d(1.05, .95, 1);
+		color: skyblue;
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+		color: skyblue;
+	}
+}
+/* This is the main navbar code */
 ul {
 	position: absolute;
 	top: 50%;

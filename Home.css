@@ -7,7 +7,9 @@ body {
 	background: #222;
 	font-family: sans-serif;
 	font-weight: bolder;
+	transition: .5s;
 }
+/* Logo */
 /* Introductory part */
 .welcome {
 	position: absolute;
@@ -25,14 +27,14 @@ body {
 
 .rubber-band {
 	animation-name: out;
-	animation-duration: 1s;
+	animation-duration: 1.5s;
 }
 
 .rubber-band:hover {
 	display: inline-block;
 	cursor: pointer;
 	animation-name: in !important;
-	animation-duration: 1s !important;
+	animation-duration: 1.5s !important;
 	animation-iteration-count: 1 !important;
 	color: skyblue;
 }
@@ -64,7 +66,7 @@ body {
 	0% {
 		transform: scale3d(1, 1, 1);
 	}
-	20% {
+	0% {
 		transform: scale3d(1.25, .75, 1);
 	}
 	40% {

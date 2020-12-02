@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #222;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.sidebar__container .sidebar a {
+	text-decoration: none;
+}
+.sidebar__container {
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: .75s ease-out 0s 1 Fade-In;
+}
+.logo {
+	width: 100%;
+	padding-left: 2.5px;
+	padding: 2.5px;
+	text-align: center;
+	background: #000;
+}
+.fas {
+	font-size: 100%;
+}
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 80px;
+	background-color: #181818;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	overflow: hidden;
+}
+/* Sidebar links */
+.sidebar .fas {
+	cursor: pointer;
+	display: block;
+	color: grey;
+	padding: 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.sidebar .fas:hover {
+	color: white;
+}
+.sidebar__container .sidebar .fa:hover .fa-home:after {
+	content: 'Home';
+}
+
+div.content {
+	margin-left: 150px;
+	padding: 10px;
+	height: 1000px;
+}
+
+/*Animations*/
+@keyframes Fade-In {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
